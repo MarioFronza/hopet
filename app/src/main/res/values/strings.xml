@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Pin1-Hopet</string>
+    <string name="textoNomeUsuario">Nome</string>
+    <string name="textoEmail">E-mail</string>
+    <string name="textoSenha">Senha</string>
+    <string name="textoConfirmarSenha">Confirmar senha</string>
+    <string name="textoCadastrar">Cadastrar</string>
+    <string name="NaoCadastro">Cadastre-se aqui</string>
+    <string name="Logar">Logar</string>
+    <string name="Acesse">Acesse sua conta</string>
+    <string name="CriarConta">Crie sua conta aqui</string>
 </resources>
