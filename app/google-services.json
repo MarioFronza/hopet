@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "150213529859",
-    "firebase_url": "https://hopet-a7528.firebaseio.com",
-    "project_id": "hopet-a7528",
-    "storage_bucket": "hopet-a7528.appspot.com"
+    "project_number": "1098316344403",
+    "firebase_url": "https://projetointegrador-bc94d.firebaseio.com",
+    "project_id": "projetointegrador-bc94d",
+    "storage_bucket": "projetointegrador-bc94d.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:150213529859:android:f395a60880ce53f9",
+        "mobilesdk_app_id": "1:1098316344403:android:f395a60880ce53f9",
         "android_client_info": {
           "package_name": "com.example.mario.pin1_hopet"
         }
       },
       "oauth_client": [
         {
-          "client_id": "150213529859-ku8faatrjrlqek2ve28kt7cbrm7tt8bq.apps.googleusercontent.com",
+          "client_id": "1098316344403-v6p0jj70na8hmemtbr92vmeqe3a25hrp.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.mario.pin1_hopet",
@@ -23,13 +23,13 @@
           }
         },
         {
-          "client_id": "150213529859-vg53uq22h19fiv18dslmfqm3o45bpna0.apps.googleusercontent.com",
+          "client_id": "1098316344403-70squmvne4um3d0jq24gnjd7dg6t0hhb.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDnm-o0ZvbQksvurEh5KE4LCYJqO954714"
+          "current_key": "AIzaSyAHtTyruMts2cZNYX0R877c-8p-zLqzTE0"
         }
       ],
       "services": {
@@ -40,7 +40,7 @@
           "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "150213529859-vg53uq22h19fiv18dslmfqm3o45bpna0.apps.googleusercontent.com",
+              "client_id": "1098316344403-70squmvne4um3d0jq24gnjd7dg6t0hhb.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
