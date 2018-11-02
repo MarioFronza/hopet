@@ -4,9 +4,9 @@
     <color name="colorPrimaryDark">#527d23</color>
     <color name="colorAccent">#2a333a</color>
 
-    <color name="colorIntro">#cc7e2b</color>
+    <color name="colorPostagem">#cc7e2b</color>
     <color name="colorIntroDark">#b15d0f</color>
-
+    <color name="background_material_dark">#ffffff</color>
 
 
 </resources>

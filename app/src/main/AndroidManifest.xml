@@ -23,9 +23,11 @@
         <activity android:name=".view.activity.CadastroActivity" />
         <activity android:name=".view.activity.LoginActivity" />
         <activity
-            android:name=".view.activity.MainActivity"
+            android:name=".view.activity.PrincipalActivity"
             android:label="@string/title_activity_principal"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
+        <activity android:name=".view.activity.CadastroAnimalActivity" />
+        <activity android:name=".view.activity.PerfilActivity"></activity>
     </application>
 
 </manifest>
