@@ -4,13 +4,9 @@ import com.example.mario.pin1_hopet.control.ConfiguracaoFirebase;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.Exclude;
 
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 
-/**
- * @author mario
- * @version 1.0
- * @created 01-Nov-2018 7:33:32 PM
- */
 public class Usuario {
 
 	private String idUsuario;
@@ -20,8 +16,7 @@ public class Usuario {
 	private String nome;
 	private String foto;
 	private String senha;
-	private List<Postagem> postagens;
-	private List<Animal> animais;
+
 
 	public Usuario(){
 
@@ -31,6 +26,22 @@ public class Usuario {
 		DatabaseReference firebaseRef = ConfiguracaoFirebase.getFirebaseDatabase();
 		DatabaseReference usuariosRef = firebaseRef.child("usuarios").child(getIdUsuario());
 		usuariosRef.setValue(this);
+	}
+
+	public void atualizar(){
+		DatabaseReference firebaseRef = ConfiguracaoFirebase.getFirebaseDatabase();
+		DatabaseReference usuarioRef = firebaseRef.child("usuarios").child(getIdUsuario());
+		Map<String, Object> valoresUsuarios = converterParaMap();
+		usuarioRef.updateChildren(valoresUsuarios);
+	}
+
+	public Map<String, Object> converterParaMap(){
+		HashMap<String, Object> usuarioMap = new HashMap<>();
+		usuarioMap.put("email", getEmail());
+		usuarioMap.put("nome", getNome());
+		usuarioMap.put("id", getIdUsuario());
+		usuarioMap.put("foto", getFoto());
+		return usuarioMap;
 	}
 
 	public String getIdUsuario() {
@@ -90,19 +101,4 @@ public class Usuario {
 		this.senha = senha;
 	}
 
-	public List<Postagem> getPostagens() {
-		return postagens;
-	}
-
-	public void setPostagens(List<Postagem> postagens) {
-		this.postagens = postagens;
-	}
-
-	public List<Animal> getAnimais() {
-		return animais;
-	}
-
-	public void setAnimais(List<Animal> animais) {
-		this.animais = animais;
-	}
 }

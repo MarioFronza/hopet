@@ -12,11 +12,11 @@
         <item
             android:id="@+id/nav_postagem"
             android:icon="@drawable/ic_postagem"
-            android:title="Postagens" />
+            android:title="Suas postagens" />
         <item
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_animal"
-            android:title="Animais" />
+            android:title="Seus pets" />
         <item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_favoritos"

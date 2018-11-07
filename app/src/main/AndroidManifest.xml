@@ -27,7 +27,8 @@
             android:label="@string/title_activity_principal"
             android:theme="@style/AppTheme" />
         <activity android:name=".view.activity.CadastroAnimalActivity" />
-        <activity android:name=".view.activity.PerfilActivity"></activity>
+        <activity android:name=".view.activity.PerfilActivity" />
+        <activity android:name=".view.activity.CadastroCasaActivity"></activity>
     </application>
 
 </manifest>

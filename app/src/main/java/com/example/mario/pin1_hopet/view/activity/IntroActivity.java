@@ -80,7 +80,6 @@ public class IntroActivity extends com.heinrichreimersoftware.materialintro.app.
 
     public void verificarUsuarioLogado(){
         autenticacao = ConfiguracaoFirebase.getFirebaseAuth();
-        autenticacao.signOut();
         if(autenticacao.getCurrentUser() != null){
             startActivity(new Intent(IntroActivity.this, PrincipalActivity.class));
         }

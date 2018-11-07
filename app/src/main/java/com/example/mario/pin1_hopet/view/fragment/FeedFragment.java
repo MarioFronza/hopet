@@ -14,9 +14,7 @@ import android.widget.Toast;
 import com.example.mario.pin1_hopet.R;
 import com.example.mario.pin1_hopet.view.activity.CadastroActivity;
 
-/**
- * A simple {@link Fragment} subclass.
- */
+
 public class FeedFragment extends Fragment {
 
 

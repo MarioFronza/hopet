@@ -10,6 +10,7 @@ import android.widget.Toast;
 
 import com.example.mario.pin1_hopet.R;
 import com.example.mario.pin1_hopet.control.ConfiguracaoFirebase;
+import com.example.mario.pin1_hopet.control.UsuarioFirebase;
 import com.example.mario.pin1_hopet.model.Usuario;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -81,11 +82,12 @@ public class CadastroActivity extends AppCompatActivity {
                 if(task.isSuccessful()){
                     try {
                         String idUsuario = task.getResult().getUser().getUid();
+                        UsuarioFirebase.atualizarNomeUsuario(usuario.getNome());
                         usuario.salvar();
-                        finish();
                     }catch (Exception e){
                         e.printStackTrace();
                     }
+                    finish();
                 }else{
                     String excecao = "";
                     try {
